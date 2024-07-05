@@ -1,0 +1,276 @@
+/* General pages styles */
+body {
+    background-color: #fcfcfc;
+    max-width: 100%;
+    overflow-x: hidden !important;
+}
+html {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* Padding 0 and margin 0 because otherwise the background of the landing area will have empty areas on both sides and not go 100% of the page width */
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5 {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+a {
+    font-family: 'Quicksand', sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.25rem;
+}
+
+.btn {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.btn:hover{
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    transform:skew(10.5);
+    cursor: pointer;
+}
+
+.card {
+    border-width: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+/*General pages styles ends */
+
+/* Navbar styles */
+.navbar {
+    height: fit-content;
+    box-shadow: 0 6px 10px rgba(0,0,0,.07), 0 0 6px rgba(0,0,0,.05); /* Adding a shadow to the bottom of the navbar */
+    top: 0;
+}
+
+/* Setting elements further away from the sides */
+.navbar .navbar-nav {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* Setting the logo further away from the sides */
+.navbar-brand {
+    margin-left: 10%;
+}
+.nav-item a {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.nav-item a:hover {
+    color:#000000;
+    text-decoration: underline;
+    text-decoration-color: #6495ed;
+    text-decoration-thickness: 3px;
+}
+
+/* Selectitud navbari elemendi stiil */
+.link-selected {
+    color:#000000;
+    text-decoration: underline;
+    text-decoration-color: #6495ed;
+    text-decoration-thickness: 3px;
+}
+
+/* Navbar styles ends */
+
+/* Back to Top button */
+.back-to-top {
+    background-color: #0890ff;
+    color:#fcfcfc;
+    border-width: 0;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+/* Back to Top button ends */
+/* Landing page section */
+.landing-page {
+    min-width: 100%;
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.landing-page .background {
+    height: 90vh; /* 90vh tähendab, et me seame selle sektsiooni kõrguseks 90% võimalikust vaadetavast alast */
+    background-image: url("../img/landing.jpg");
+    background-size: cover;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Parallax scrolling */
+    background-attachment: fixed;
+    text-align: center;
+    color:#fcfcfc;
+}
+
+.landing-title {
+    font-weight: 700;
+    font-size: 4rem;
+    padding-top: 25vh;
+}
+
+.landing-text {
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.landing-page .btn-dark {
+    background-color:#0000007e;
+    border-width: 0; /* Eemaldame borderi, sest see on kole */
+}
+
+.landing-page p {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Landing page section ends */
+
+/* What we offer section */
+.offer {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+.offer h2, .gamemodes-section h2 {
+    color:#0890ff;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.offer hr {
+    border-top: 2px solid #0890ff;
+    margin: auto;
+    width: 50vh;
+    opacity: 100%;
+    margin-bottom: 50px;
+}
+
+.offer .offer-title {
+    font-weight: 600;
+    color: #0890ff;
+}
+/* What we offer section ends */
+
+/* Join today/Best custom gamemodes section */
+.join-today {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url("../img/jointoday.jpg");
+    background-size: cover;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Parallax scrolling */
+    background-attachment: fixed;
+    text-align: center;
+    color:#fcfcfc;
+}
+/* Join today/Best custom gamemodes section ends */
+
+/* Gamemodes section */
+.gamemodes-section {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+}
+
+.gamemodes-section .container {
+    padding-bottom: 60px;
+}
+.gamemodes-section hr {
+    border-top: 2px solid #0890ff;
+    margin: auto;
+    width: 50vh;
+    opacity: 100%;
+    margin-bottom: 50px;
+}
+
+.gamemodes-section h1 {
+    color:#0890ff;
+}
+
+/* Gamemodes section ends */
+
+/* Voting section */
+.voting {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    background-image: url("../img/jointoday.jpg");
+    background-size: cover;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Parallax scrolling */
+    background-attachment: fixed;
+    text-align: center;
+}
+
+.voting h2 {
+    color:#0890ff;
+    font-weight: 700;
+}
+
+/* Voting section ends */
+
+/* Server status section */
+.status {
+    padding-top: 2.5rem;
+    padding-bottom: 4rem;
+    text-align: center;
+}
+
+.status h2 {
+    color: #0890ff;
+}
+
+.status-card {
+    border-width: 0;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+
+.status-card:hover{
+    transform: scale(1.05);
+ box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+/* Server status section ends */
+
+/* Questions section */
+.questions {
+    padding-top: 5rem;
+    padding-bottom: 2.5rem;
+    background-image: url("../img/questionsv2.png");
+    background-size: cover;
+    background-position: center center; /* Centers the image */
+    background-repeat: no-repeat; /* Parallax scrolling */
+    background-attachment: fixed;
+    text-align: center;
+    color:#fcfcfc;
+}
+
+.questions h2 {
+    color:#0890ff;
+}
+
+.questions p {
+    font-weight: 600;
+}
+
+/* Questions section ends */

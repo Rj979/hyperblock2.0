@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hyperblock</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar navbar-expand-sm bg-light fixed-top" role="navigation">
+        <div class="container-fluid" id="navfluid">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="true" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="https://i.imgur.com/rtG1kyQ.png" height="55"></a>
+            <div class="navbar-collapse collapse" id="navbarResponsive">
+                <!-- Links -->
+                <ul class="nav navbar-nav ms-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link home link-selected" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link about" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gamemodes" href="#gamemodes">Gamemodes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link vote" href="#vote">Vote</a>
+                    </li>
+                    <li>
+                        <a class="btn btn-outline-primary" href="#">Store</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Page Content begins -->
+    <div class="container-fluid">
+
+        <!--  Landing area section -->
+        <section class="landing-page" id="home">
+            <div class="background">
+                <h1 class="landing-title">HyperBlock SMP</h1>
+                <h5 class="landing-text">Join <div class="spinner-border spinner-border-sm" role="status"></div> other players at</h5>
+                <a href="#" class="btn btn-dark landing-text ip-field" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">play.hyperblock.fun</a>
+                <p>Click the IP to copy</p>
+            </div>
+        </section>
+        <!-- Landing area section ends -->
+
+        <!-- What we offer section -->
+        <section class="offer" id="about">
+            <div class="container">
+                <h2>What we offer</h2>
+                <hr>
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span style="color: #0890ff;">
+                                    <i class="fa-solid fa-signal fa-2xl"></i>
+                                </span>
+                                <p class="offer-title mt-2">Always Online</p>
+                                <p>Our server has 99.99% uptime so you can play whenever you want!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span style="color: #0890ff;">
+                                    <i class="fa-solid fa-users fa-2xl"></i>
+                                </span>
+                                <p class="offer-title mt-2">Amazing Community</p>
+                                <p>When playing in our server you will be greeted by a welcoming community!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span style="color: #0890ff;">
+                                    <i class="fa-regular fa-calendar fa-2xl"></i>
+                                </span>
+                                <p class="offer-title mt-2">Regular Updates</p>
+                                <p>Our server is updated regularly to make sure that you get the best experience</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span style="color: #0890ff;">
+                                    <i class="fa-solid fa-gamepad fa-2xl"></i>
+                                </span>
+                                <p class="offer-title mt-2">Custom Gamemodes</p>
+                                <p>We offer the best custom gamemodes to provide an interesting gameplay</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- What we offer section ends-->
+
+        <!-- Join today section -->
+        <section class="join-today" id="join-today">
+            <h2>The best custom gamemodes around!</h2>
+            <h4>Join our server today at <a href="#about" class="btn btn-dark landing-text ip-field2" data-toggle="tooltip" title="Successfully copied IP to clipboard!" style="color: #0890ff;">play.hyperblock.fun</a></h4>
+            <p><b>Click the IP address to copy</b></p>
+        </section>
+        <!-- Join today section ends -->
+
+        <!-- Gamemodes section -->
+        <section class="gamemodes-section" id="gamemodes">
+            <h2>Our gamemodes</h2>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 column-text-left">
+                        <h1>Survival</h1>
+                        <p>Vanilla Survival is what you can accomplish without using any "cheats" or commands (or command blocks). Most "Vanilla Survival Purists" would argue that switching between difficulties (i.e. to peaceful) would violate the Vanilla aspect of Survival.</p>
+                        <a href="" class="btn btn-primary column-btn mb-2">Learn more</a>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <img src="img/zombies.png" alt="Zombies" class="img-fluid" height="500">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6">
+                        <!-- Removed the <img> element -->
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 d-flex align-items-center justify-content-center">
+                        <!-- Ensure text is centered -->
+                        <h2 class="text-center">Many more coming</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Gamemodes section ends -->
+
+        <!-- Vote for us section -->
+        <section class="voting" id="vote">
+            <h2>Vote for our server!</h2>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span>
+                                    <img src="https://minecraft-mp.com/images/logo_top.png">
+                                </span>
+                                <p class="mt-2"><b>Minecraft-MP.com</b></p>
+                                <a href="https://minecraft-mp.com/server/333749/vote/" target="_blank" class="btn btn-outline-success">Vote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span>
+                                    <img src="https://pbs.twimg.com/profile_images/2630509193/f960233dd122dec60524f5d47e5c2ed2_400x400.png" width="50">
+                                </span>
+                                <p class="mt-2"><b>Minecraft-Server-List.com</b></p>
+                                <a href="https://minecraft-server-list.com/server/505516/vote/" target="_blank" class="btn btn-outline-success">Vote</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card shadow mb-4">
+                            <div class="card-body">
+                                <span>
+                                    <img src="https://i.imgur.com/Zk0ufYj.png" width="50">
+                                </span>
+                                <p class="mt-2"><b>MinecraftServers.org</b></p>
+                                <a href="https://minecraftservers.org/server/663874" target="_blank" class="btn btn-outline-success">Vote</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Vote for us section ends -->
+
+        <!-- Server status section -->
+        <section class="status">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <h2>Server status</h2>
+                    <span class="col-lg-7">
+                        <a href="https://minecraftservers.org/server/663874" target="_blank"><img src="https://status.minecraftservers.org/classic/663874.png" alt="Hyperblock SMP Minecraft server" width="540" height="90" /></a>
+                    </span>
+                </div>
+            </div>
+        </section>
+        <!-- Server status section ends-->
+
+        <<!-- Questions section -->
+<section class="questions">
+    <h2>Do you have any questions?</h2>
+    <div class="container">
+        <div class="row justify-content-center">
+            <p>Join our <a href="https://discord.gg/7DJgrFrNPw" target="_blank">Discord</a> server today!</p>
+        </div>
+    </div>
+</section>
+<!-- Questions section ends -->
+
+
+    </div>
+    <!-- Page Content ends -->
+
+    <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-center text-lg-start">
+        <div class="text-light text-center p-3">
+            © 2024 Hyperblock all rights reserved , terms and conditions apply
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+            //Tooltips
+            $('[data-toggle="tooltip"]').tooltip({
+                trigger: 'click'
+            });
+
+            //Back to Top button script
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) {
+                    $('#back-to-top').fadeIn();
+                } else {
+                    $('#back-to-top').fadeOut();
+                }
+            });
+            // scroll body to 0px on click
+            $('#back-to-top').click(function () {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+            
+        });
+
+        //Setting navigation bar elements active based on section
+        const sections = document.querySelectorAll("section"); //All sections on this page
+        const navA = document.querySelectorAll("nav ul li a"); //All a elements in the navbar
+        window.onscroll = () => {
+            var current = "";
+
+            sections.forEach((section) => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop ) {
+                    current = section.getAttribute("id"); }
+                });
+            
+                navA.forEach((a) => {
+                a.classList.remove("link-selected");
+                if (a.classList.contains(current)) {
+                    a.classList.add("link-selected");
+                }
+            });
+        };
+
+        //Copying IP to the clipboard
+        // get the text from the DOM Element: 
+        const textToCopy = document.querySelector('.ip-field').innerText
+        const textToCopy2 = document.querySelector('.ip-field2').innerText
+
+        // when someone clicks on the <a class="ip-field"> element 
+        // (which should be a <button>), execute the copy command:
+        document.querySelector('.ip-field').addEventListener('click' , ()=> {
+            navigator.clipboard.writeText(textToCopy).then(
+                function() {
+                //Successfully copied to clipboard
+                hideTooltip(); ///Calls the function to hide the tooltip
+                }, 
+                function() {
+                //Copying to clipboard failed, sends the alert
+                window.alert('Opps! Your browser does not support the Clipboard API')
+                }
+            )
+        })
+
+        // when someone clicks on the <a class="ip-field2"> element 
+        // (which should be a <button>), execute the copy command:
+            document.querySelector('.ip-field2').addEventListener('click' , ()=> {
+                navigator.clipboard.writeText(textToCopy2).then(
+                    function() {
+                    //Successfully copied to clipboard
+                    hideTooltip(); ///Calls the function to hide the tooltip
+                    }, 
+                    function() {
+                    //Copying to clipboard failed, sends the alert
+                    window.alert('Opps! Your browser does not support the Clipboard API')
+                    }
+                )
+            })
+
+        //Hides the tooltip after a certain amount of time
+        function hideTooltip() {
+            setTimeout(function() {
+                $('.ip-field').tooltip('hide');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
