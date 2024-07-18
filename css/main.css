@@ -1,101 +1,104 @@
 /* General pages styles */
 body {
-    background-color: #fcfcfc;
+    background-color: #121212;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    color: #e0e0e0; /* Default text color for dark mode */
+}
+
+html {
     max-width: 100%;
     overflow-x: hidden !important;
 }
-html {
-  max-width: 100%;
-  overflow-x: hidden !important;
-}
 
-/* Padding 0 and margin 0 because otherwise the background of the landing area will have empty areas on both sides and not go 100% of the page width */
 .container-fluid {
     padding: 0;
     margin: 0;
 }
 
-h1,h2,h3,h4,h5 {
+h1, h2, h3, h4, h5 {
     font-family: 'Quicksand', sans-serif;
     font-weight: 700;
+    color: #e0e0e0; /* Default heading color for dark mode */
 }
+
 a {
     font-family: 'Quicksand', sans-serif;
+    color: #1e90ff; /* Link color for dark mode */
 }
 
 p {
     font-family: 'Quicksand', sans-serif;
     font-size: 1.25rem;
+    color: #e0e0e0; /* Default paragraph color for dark mode */
 }
 
 .btn {
     font-family: 'Quicksand', sans-serif;
+    color: #e0e0e0; /* Button text color for dark mode */
 }
 
-.btn:hover{
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-          transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-    transform:skew(10.5);
+.btn:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+    transform: skew(10.5);
     cursor: pointer;
 }
 
 .card {
     border-width: 0;
-    background: rgb(255, 255, 255);
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    background: rgb(38, 38, 38); /* Card background color for dark mode */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     cursor: pointer;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.05);
- box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
-/*General pages styles ends */
 
 /* Navbar styles */
 .navbar {
     height: fit-content;
-    box-shadow: 0 6px 10px rgba(0,0,0,.07), 0 0 6px rgba(0,0,0,.05); /* Adding a shadow to the bottom of the navbar */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .07), 0 0 6px rgba(0, 0, 0, .05); /* Adding a shadow to the bottom of the navbar */
     top: 0;
+    background-color: #2c2c2c !important; /* Ensure the dark background color is applied */
 }
 
-/* Setting elements further away from the sides */
 .navbar .navbar-nav {
     margin-left: 10%;
     margin-right: 10%;
 }
 
-/* Setting the logo further away from the sides */
 .navbar-brand {
     margin-left: 10%;
 }
+
 .nav-item a {
     font-size: 1rem;
     font-weight: 600;
+    color: #e0e0e0; /* Light text color for nav items */
 }
 
 .nav-item a:hover {
-    color:#000000;
+    color: #ffffff; /* Hover color for nav links */
     text-decoration: underline;
-    text-decoration-color: #6495ed;
+    text-decoration-color: #79aaff;
     text-decoration-thickness: 3px;
 }
 
-/* Selectitud navbari elemendi stiil */
 .link-selected {
-    color:#000000;
+    color: #ffffff; /* Selected link color */
     text-decoration: underline;
-    text-decoration-color: #6495ed;
+    text-decoration-color: #79aaff;
     text-decoration-thickness: 3px;
 }
-
-/* Navbar styles ends */
 
 /* Back to Top button */
 .back-to-top {
     background-color: #0890ff;
-    color:#fcfcfc;
+    color: #fcfcfc;
     border-width: 0;
     position: fixed;
     bottom: 25px;
@@ -103,7 +106,6 @@ p {
     display: none;
 }
 
-/* Back to Top button ends */
 /* Landing page section */
 .landing-page {
     min-width: 100%;
@@ -113,38 +115,53 @@ p {
 }
 
 .landing-page .background {
-    height: 90vh; /* 90vh tähendab, et me seame selle sektsiooni kõrguseks 90% võimalikust vaadetavast alast */
-    background-image: url("../img/landing.jpg");
+    height: 90vh; /* 90vh means 90% of the viewport height */
+    background-image: url("../img/landing-dark.webp"); /* Dark version of the image */
     background-size: cover;
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Parallax scrolling */
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    color:#fcfcfc;
+    color: #e0e0e0;
 }
 
 .landing-title {
     font-weight: 700;
     font-size: 4rem;
     padding-top: 25vh;
+    color: #e0e0e0; /* Dark mode title color */
 }
 
 .landing-text {
     font-weight: 600;
     font-size: 1.25rem;
+    color: #e0e0e0; /* Dark mode text color */
 }
 
 .landing-page .btn-dark {
-    background-color:#0000007e;
-    border-width: 0; /* Eemaldame borderi, sest see on kole */
+    background-color: #0000007e;
+    border-width: 0;
 }
 
 .landing-page p {
     font-weight: 600;
     font-size: 1rem;
+    color: #e0e0e0; /* Dark mode paragraph color */
 }
 
-/* Landing page section ends */
+/* Join today/Best custom gamemodes section */
+.join-today {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: #333; /* Fallback background color */
+    background-image: url("../img/jointoday-dark.webp"); /* Dark version of the image */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    color: #e0e0e0;
+}
 
 /* What we offer section */
 .offer {
@@ -152,14 +169,15 @@ p {
     padding-bottom: 5rem;
     text-align: center;
 }
+
 .offer h2, .gamemodes-section h2 {
-    color:#0890ff;
+    color: #1e90ff; /* Section heading color for dark mode */
     text-transform: capitalize;
     text-align: center;
 }
 
 .offer hr {
-    border-top: 2px solid #0890ff;
+    border-top: 2px solid #1e90ff; /* Horizontal rule color for dark mode */
     margin: auto;
     width: 50vh;
     opacity: 100%;
@@ -168,23 +186,8 @@ p {
 
 .offer .offer-title {
     font-weight: 600;
-    color: #0890ff;
+    color: #1e90ff; /* Offer title color for dark mode */
 }
-/* What we offer section ends */
-
-/* Join today/Best custom gamemodes section */
-.join-today {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    background-image: url("../img/jointoday.jpg");
-    background-size: cover;
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Parallax scrolling */
-    background-attachment: fixed;
-    text-align: center;
-    color:#fcfcfc;
-}
-/* Join today/Best custom gamemodes section ends */
 
 /* Gamemodes section */
 .gamemodes-section {
@@ -195,8 +198,9 @@ p {
 .gamemodes-section .container {
     padding-bottom: 60px;
 }
+
 .gamemodes-section hr {
-    border-top: 2px solid #0890ff;
+    border-top: 2px solid #1e90ff; /* Horizontal rule color for dark mode */
     margin: auto;
     width: 50vh;
     opacity: 100%;
@@ -204,29 +208,27 @@ p {
 }
 
 .gamemodes-section h1 {
-    color:#0890ff;
+    color: #1e90ff; /* Section heading color for dark mode */
 }
-
-/* Gamemodes section ends */
 
 /* Voting section */
 .voting {
     padding-top: 5rem;
     padding-bottom: 2.5rem;
-    background-image: url("../img/jointoday.jpg");
+    background-color: #333; /* Fallback background color */
+    background-image: url("../img/jointoday-dark.webp"); /* Dark version of the image */
     background-size: cover;
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Parallax scrolling */
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
+    color: #e0e0e0;
 }
 
 .voting h2 {
-    color:#0890ff;
+    color: #1e90ff; /* Section heading color for dark mode */
     font-weight: 700;
 }
-
-/* Voting section ends */
 
 /* Server status section */
 .status {
@@ -236,41 +238,41 @@ p {
 }
 
 .status h2 {
-    color: #0890ff;
+    color: #1e90ff; /* Section heading color for dark mode */
 }
 
 .status-card {
     border-width: 0;
-    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    background: rgb(38, 38, 38); /* Card background color for dark mode */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, .08), 0 0 6px rgba(0, 0, 0, .05);
+    transition: .3s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
     cursor: pointer;
 }
 
-.status-card:hover{
+.status-card:hover {
     transform: scale(1.05);
- box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06);
 }
-/* Server status section ends */
 
 /* Questions section */
 .questions {
     padding-top: 5rem;
     padding-bottom: 2.5rem;
-    background-image: url("../img/questionsv2.png");
+    background-color: #333; /* Fallback background color */
+    background-image: url("../img/questionsv2-dark.webp"); /* Dark version of the image */
     background-size: cover;
-    background-position: center center; /* Centers the image */
-    background-repeat: no-repeat; /* Parallax scrolling */
+    background-position: center center;
+    background-repeat: no-repeat;
     background-attachment: fixed;
     text-align: center;
-    color:#fcfcfc;
+    color: #e0e0e0;
 }
 
 .questions h2 {
-    color:#0890ff;
+    color: #1e90ff; /* Section heading color for dark mode */
 }
 
 .questions p {
     font-weight: 600;
+    color: #e0e0e0; /* Paragraph color for dark mode */
 }
-
-/* Questions section ends */
