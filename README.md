@@ -5,7 +5,7 @@ Welcome to the official repository of the Hyperblock SMP website. This project c
 ## Project Structure
 
 The project is organized as follows:
-
+```
 project-root/
 ├── css/
 │ └── main.css
@@ -22,7 +22,7 @@ project-root/
 │ ├── questionsv2.webp
 │ ├── zombies.webp
 │ ├── coming-soon.webp
-│ └── other images...
+│ └── other-images/
 ├── favicons/
 │ ├── android-chrome-192x192.png
 │ ├── android-chrome-512x512.png
@@ -36,7 +36,7 @@ project-root/
 ├── CNAME
 ├── LICENSE
 └── index.html
-
+```
 
 ## Folders and Files
 
